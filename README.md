@@ -14,7 +14,7 @@
 
    
 
-   ![1562733889227](/home/formatfa/文档/真-GayHub/ITnote/Android/1562733889227.png)
+   ![1562733889227](1562733889227.png)
 
 导入后的默认是作为**application应用**的，文件夹图标右下角是一个绿色点的,因为下面app要将这个导入的模块作为依赖，所以需要将它变成**library库**
 
@@ -34,7 +34,7 @@ apply plugin: 'com.android.library'
 
 打开工程结构,选择app的Dependencies,添加Module Dependency,选择刚刚导入的opencv4
 
-![1562734230922](/home/formatfa/文档/真-GayHub/ITnote/Android/1562734230922.png)
+![1562734230922](1562734230922.png)
 
 4. 复制so库
 
@@ -42,13 +42,13 @@ apply plugin: 'com.android.library'
 
    复制 解压后的SDK `OpenCV-android-sdk/sdk/native/libs`下的全部文件夹到jniLibs目录下
 
-   ![1562734457542](/home/formatfa/文档/真-GayHub/ITnote/Android/1562734457542.png)
+   ![1562734457542](1562734457542.png)
 
 这里可以按需复制
 
 打开app模块的build.gradle文件,添加下面的代码到android节点下
 
-![1562734577340](/home/formatfa/文档/真-GayHub/ITnote/Android/1562734577340.png)
+![1562734577340](1562734577340.png)
 
 ## 测试，视频分解
 
